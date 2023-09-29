@@ -1,8 +1,11 @@
+from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse
+from django.http import JsonResponse, FileResponse, HttpResponse
 import json
 
 from robots.models import Robot
+from services import create_manufactured_robots_report
+from utils import get_last_week_dates
 from validators.robot_validators import validate_robot_JSON_data
 
 
@@ -60,3 +63,17 @@ def add_robot(request):
                             'ensure_ascii': False
                         },
                     )
+
+
+def get_factory_report(request):
+    start_week, end_week = get_last_week_dates()
+    manufactured_robots = Robot \
+        .objects.filter(created__gte=start_week, created__lt=end_week) \
+        .values('model', 'version') \
+        .annotate(total=Count('id'))
+    models = {row['model'] for row in manufactured_robots}
+    report = create_manufactured_robots_report(manufactured_robots, models)
+    if report:
+        return FileResponse(open(report, 'rb'))
+    else:
+        return HttpResponse('Ошибка создания отчёта')
