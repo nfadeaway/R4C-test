@@ -21,4 +21,5 @@ from robots.views import add_robot
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('robots/add', add_robot),
 ]
