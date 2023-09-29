@@ -1,0 +1,117 @@
+[
+  {
+    "model": "robots.robot",
+    "pk": 1,
+    "fields": {
+      "serial": "R2-D1",
+      "model": "R2",
+      "version": "D1",
+      "created": "2023-09-16 23:15:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 2,
+    "fields": {
+      "serial": "R2-D2",
+      "model": "R2",
+      "version": "D2",
+      "created": "2023-09-17 23:15:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 3,
+    "fields": {
+      "serial": "R2-D3",
+      "model": "R2",
+      "version": "D3",
+      "created": "2023-09-18 13:30:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 4,
+    "fields": {
+      "serial": "R2-D4",
+      "model": "R2",
+      "version": "D3",
+      "created": "2023-09-19 13:30:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 5,
+    "fields": {
+      "serial": "R2-D4",
+      "model": "R2",
+      "version": "D3",
+      "created": "2023-09-20 13:30:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 6,
+    "fields": {
+      "serial": "R2-D4",
+      "model": "R2",
+      "version": "D3",
+      "created": "2023-09-21 13:30:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 7,
+    "fields": {
+      "serial": "R2-D4",
+      "model": "R2",
+      "version": "D3",
+      "created": "2023-09-22 13:30:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 8,
+    "fields": {
+      "serial": "C3-P0",
+      "model": "C3",
+      "version": "P0",
+      "created": "2023-09-22 13:30:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 9,
+    "fields": {
+      "serial": "C3-P0",
+      "model": "C3",
+      "version": "P0",
+      "created": "2023-09-23 13:30:00"
+    }
+  },
+  {
+    "model": "robots.robot",
+    "pk": 10,
+    "fields": {
+      "serial": "C3-P1",
+      "model": "C3",
+      "version": "P1",
+      "created": "2023-09-23 13:30:00"
+    }
+  },
+  {
+    "model": "customers.customer",
+    "pk": 1,
+    "fields": {
+      "email": "sisafa7728@cdeter.com"
+    }
+  },
+    {
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+      "robot_serial": "M1-N1",
+      "customer_id": 1
+    }
+  }
+]
