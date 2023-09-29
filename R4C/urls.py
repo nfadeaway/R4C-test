@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from robots.views import add_robot
+from robots.views import add_robot, get_factory_report
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('robots/add', add_robot),
+    path('robots/week-factory-report', get_factory_report),
 ]
