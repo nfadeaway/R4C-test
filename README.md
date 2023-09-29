@@ -21,6 +21,9 @@ EMAIL_HOST_USER='user@domain.ru'
 EMAIL_HOST_PASSWORD='password'
 ```
 
+- На каждую таску создан PR, все влиты в master.
+
+
 #### Task 1
 `POST`- запрос на ендпоинт `robots/add`
 
